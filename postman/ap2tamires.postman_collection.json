@@ -1,0 +1,143 @@
+{
+	"info": {
+		"_postman_id": "1040fea5-704b-4920-bdfa-e79ade2d818e",
+		"name": "ap2tamires",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44733009",
+		"_collection_link": "https://tamires-2532070.postman.co/workspace/Tamires's-Workspace~0c805249-f687-4f24-80da-ddf2fee9606e/collection/44733009-1040fea5-704b-4920-bdfa-e79ade2d818e?action=share&source=collection_link&creator=44733009"
+	},
+	"item": [
+		{
+			"name": "listarTodos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/livros",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"livros"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "consultarPorId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/livros/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"livros",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cadastrar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 5,\r\n    \"titulo\": \"Orgulho e Preconceito\",\r\n    \"autor\": \" Jane Austen\",\r\n    \"editora\": \"Civilização Brasileira\", \r\n    \"qtdPaginas\": 352,\r\n    \"anoPublicacao\": 1992\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/livros",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"livros"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "atualizar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"titulo\": \"Livro Atualizado\",\r\n    \"autor\": \"Autor Atualizado\",\r\n    \"editora\": \"Editora Atualizada\",\r\n    \"qtdPaginas\": 1000,\r\n    \"anoPublicacao\": 2025\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/livros/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"livros",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletar",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/livros/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"livros",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
